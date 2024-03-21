@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #28a036;
+}
+H1{
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: darkred;
+}
+H2{
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  width: 80%; 
+  text-align: justify;
+}
+.p {
+  display: flex;
+  justify-content: center;
+}
+.fondo {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+}
+
+.jardin {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+.flor {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  margin-top: 100px;
+  animation: rotacion 3s infinite linear;
+  z-index: 1;
+}
+.flor .palo {
+  animation: none;
+}
+.petalo {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform-origin: top center;
+  animation: movimiento 2s infinite linear;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+.petalo1 {
+  top: 50%;
+  left: 35%;
+rotate: 72deg;
+}
+
+.petalo2 {
+  top: 50%;
+  left: 35%;
+  rotate: 144deg;
+}
+
+.petalo3 {
+  top: 50%;
+  left: 35%;
+rotate: 216deg;
+
+}
+
+.petalo4 {
+top: 50%;
+left: 35%;
+rotate: 288deg;
+}
+
+.petalo5 {
+top: 50%;
+left: 35%;
+rotate: 360deg;
+}
+img {
+  width: 100%;
+  align-content: center;
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+.centro {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.abajo{
+  color: black;
+}
+.abajo1{
+  text-align: right;
+  width: 100%;
+}
+@keyframes movimiento {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(45deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+@keyframes rotacion {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
